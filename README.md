@@ -37,4 +37,34 @@ ex3) ‘마포구’와 ‘광진구’에 있는 따릉이 정류소 데이터�
       SELECT *
       FROM station
       WHERE local IN('마포구', '광진구')
+
+ex4) 정류소 최근 갱신일(updated_at)이 2018년인 데이터를 뽑아주세요.
+      SELECT *
+      FROM station
+      WHERE updated_at BETEWEEN '2018-01-01' AND '2018-12-31'
+
+**패턴에 맞는 문자 찾기 (LIKE / NOT LIKE)**
+
+ex1) 주소에 ‘망원동’이 들어가는 데이터를 뽑아주세요.
+      SELECT *
+      FROM station
+      WHERE address LIKE '%망원동%'
+
+ex2) 주소가 ‘서울특별시’로 시작하지 않는 데이터를 10개만 뽑아주세요.
+      SELECT *
+      FROM station
+      WHERE address NOT LIKE '%서울특별시%'
+
+**데이터 순서 정렬하기(ORDER BY)**
+
+ex1) station 테이블을 station_id 기준으로 가장 큰 값부터 출력해 주세요.
+      SELECT *
+      FROM station
+      ORDER BY station_id DESC
+
+ex2) ‘광진구’에 위치한 따릉이 정류소 중 최근 업데이트된(updated_at) 정류소부터 출력해 주세요. 만약 업데이트 된 날짜가 같다면, station_id가 작은 것부터 보여주세요.
+      SELECT *
+      FROM station
+      ORDER BY updated at DESC, station_id
+
   
