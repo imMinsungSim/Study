@@ -2,7 +2,7 @@
 
 SQL
 
-데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)
+**데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)**
 
 ex1) 테이블의 모든 칼럼을 다 출력해주세요. 데이터는 10개만 출력해주세요.
       SELECT * 
@@ -20,7 +20,7 @@ ex3) station 테이블에서 소속 지자체(local)와 정류소 타입(type) �
            ,type
       FROM station
 
-조건에 맞는 데이터 검색하기(WHERE)
+**조건에 맞는 데이터 검색하기(WHERE)**
 
 ex1) ‘마포구'에 있는 따릉이 정류소만 뽑아주세요.
       SELECT *
