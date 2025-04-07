@@ -5,7 +5,6 @@ SQL
 **데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)**
 
 ex1) 테이블의 모든 칼럼을 다 출력해주세요. 데이터는 10개만 출력해주세요.
-
       SELECT * 
       FROM station 
       LIMIT 10 ; 
@@ -14,7 +13,7 @@ ex2) 테이블의 모든 컬럼을 가져오는 쿼리를 정류소 이름(name)
       SELECT name
             ,address
       FROM station
-      LIMIT 10
+      LIMIT 10;
 
 ex3) station 테이블에서 소속 지자체(local)와 정류소 타입(type) 데이터를 가져오세요. 중복 데이터는 제외합니다.
       SELECT local
