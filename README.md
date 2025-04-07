@@ -5,11 +5,13 @@ SQL
 **데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)**
 
 ex1) 테이블의 모든 칼럼을 다 출력해주세요. 데이터는 10개만 출력해주세요.
+
       SELECT * 
       FROM station 
       LIMIT 10 ; 
 
 ex2) 테이블의 모든 컬럼을 가져오는 쿼리를 정류소 이름(name)과 주소(address)만 가져오는 쿼리로 수정해 봅시다.
+
       SELECT name
             ,address
       FROM station
