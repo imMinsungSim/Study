@@ -76,4 +76,35 @@ ex2) ‘광진구’에 위치한 따릉이 정류소 중 최근 업데이트된
       FROM station
       ORDER BY updated at DESC, station_id;
 
+**데이터 더하기, 빼기, 곱하기 (+, -, *)****
+
+ex1)  tips 테이블 데이터 중에서 팁이 전체 식사 금액의 10%를 넘는 경우 데이터를 모두 출력해 주세요.
   
+      SELECT *
+      FROM tips
+      WHERE tip > total_bill * 0.1
+
+ex2) tips 테이블 데이터를 이용하여 tip 컬럼의 값을 2배로 출력하는 쿼리를 작성해 주세요. 결과 컬럼은 double_tip으로 출력해 주세요.
+
+      SELECT tip * 2 as double_tip
+      FROM tips
+      
+**데이터 나누기와 관련된 연산자 (/, DIV, %, MOD)**
+
+ex1) 나누기 연산자(/)와 정수 나누기 연산자(DIV)를 이용하여 각 테이블에서 지불한 전체 식사 금액이 팁의 몇 배인지 계산하는 쿼리를 작성해 주세요.
+
+      SELECT total_bill / tip
+            ,total_bill DIV tip
+      FROM tips
+      
+ex2) tips 테이블에서 size 컬럼이 짝수이면 0, 홀수이면 1을 출력하는 odd_even 컬럼을 출력해 주세요. size 컬럼도 함께 출력해 주세요.
+
+      SELECT size
+            ,size % 2 AS odd_even
+      FROM tips
+
+ex3) tips 테이블에서 size 컬럼이 짝수인 영수증만 출력해 주세요.
+
+      SELECT *
+      FROM tips
+      WHERE size % 2 = 0
