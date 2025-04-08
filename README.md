@@ -1,7 +1,5 @@
 # SQL
 
-SQL
-
 **데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)**
 
 ex1) 테이블의 모든 칼럼을 다 출력해주세요. 데이터는 10개만 출력해주세요.
