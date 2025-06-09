@@ -108,3 +108,39 @@ ex3) tips 테이블에서 size 컬럼이 짝수인 영수증만 출력해 주세
       SELECT *
       FROM tips
       WHERE size % 2 = 0
+
+**데이터 개수 세기 (COUNT())**
+
+ex1) tips 테이블에는 총 몇 개의 데이터가 들어있을까요?
+
+      SELECT COUNT(*)
+      FROM tips
+      
+ex2) 10불 이상 결제한 테이블은 몇 개 일까요?
+
+      SELECT COUNT(*)
+      FROM tips
+      WHERE total_bill >= 10
+
+ex3) 며칠 치 데이터가 들어있을까요?
+
+      SELECT COUNT(DISTINCT day)
+      FROM tips
+      
+**집계 함수 SUM(), AVG(), MIN(), MAX()**
+
+ex1) 가게의 총매출액을 구해봅시다.
+
+      SELECT SUM(total_bill)
+      FROM tips 
+
+ex2) 테이블당 평균 결제 금액을 구해봅시다.
+
+      SELECT AVG(total_bill)
+      FROM tips
+
+ex3) 가장 결제 금액이 작았던 식사 금액과 컸던 식사 금액을 출력해 봅시다.
+
+      SELECT MIN(total_bill)
+            ,MAX(total_bill)
+      FROM tips
