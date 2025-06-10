@@ -179,13 +179,15 @@ ex3) 요일별로 여성의 매출액 합계를 구해봅시다. 매출액 합�
 아무런 가공을 하지 않은 원본 데이터에서 특정 조건을 만족하는 데이터를 뽑아올 때 사용하는 명령어가 WHERE이고요. <br/> 
 HAVING은 GROUP BY를 사용하여 연산한 결과에서 특정 조건을 만족하는 데이터를 뽑아올 때 사용하는 명령어입니다. <br/>
 
-```
-SELECT day
-     , time
-     , COUNT(*)
-FROM tips
-WHERE sex = 'Female'   -- 여성이 결제한 데이터만 뽑아 보겠다
-GROUP BY day, time     -- 요일 시간대별로 GROUP BY 해서 보겠다
-HAVING COUNT(*) >= 5   -- GROUP BY 후 데이터가 5개 이상인 그룹의 데이터만 보겠다
-```
+      ```
+      SELECT day
+           , time
+           , COUNT(*)
+      FROM tips
+      WHERE sex = 'Female'   -- 여성이 결제한 데이터만 뽑아 보겠다
+      GROUP BY day, time     -- 요일 시간대별로 GROUP BY 해서 보겠다
+      HAVING COUNT(*) >= 5   -- GROUP BY 후 데이터가 5개 이상인 그룹의 데이터만 보겠다
+      ```
+
+어
 
