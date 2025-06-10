@@ -1,4 +1,4 @@
-# SQL
+# SQL Basic 문법 연습
 
 **데이터 가져오기(SELECT, FROM, LIMIT, DISTINCT)**
 
@@ -144,3 +144,48 @@ ex3) 가장 결제 금액이 작았던 식사 금액과 컸던 식사 금액을 
       SELECT MIN(total_bill)
             ,MAX(total_bill)
       FROM tips
+
+**데이터 요약하기(GROUP BY, HAVING, ORDER BY)**
+
+ex1) 요일별로 매출액의 합계를 구해봅시다.
+
+      SELECT day
+            ,SUM(total_bill)
+      FROM tips
+      GROUP BY day 
+
+ex2) 요일, 시간대별로 매출액,팁의 합계를 구해봅시다.
+
+      SELECT day
+            ,time
+            ,SUM(total_bill) as sales
+            ,SUM(tip) as tips
+      FROM tips
+      GROUP BY day, time
+      ORDER BY day ASC, time ASC
+
+ex3) 요일별로 여성의 매출액 합계를 구해봅시다. 매출액 합계가 200불 미만인 날은 출력에서 제외하고, 매출액이 많은 날부터 출력하세요
+
+      SELECT day
+            ,SUM(total_bill) as sales
+      FROM tips
+      WHERE sex  'Female'
+      GROUP BY day
+      HAVING sales >= 200
+      ORDER BY sales DESC
+
+**[헷갈리는 부분 정리]** <br/>
+언제 WHERE를 써야 하는지, 언제 HAVING을 써야 하는지 ? <br/>
+아무런 가공을 하지 않은 원본 데이터에서 특정 조건을 만족하는 데이터를 뽑아올 때 사용하는 명령어가 WHERE이고요. <br/> 
+HAVING은 GROUP BY를 사용하여 연산한 결과에서 특정 조건을 만족하는 데이터를 뽑아올 때 사용하는 명령어입니다. <br/>
+
+```
+SELECT day
+     , time
+     , COUNT(*)
+FROM tips
+WHERE sex = 'Female'   -- 여성이 결제한 데이터만 뽑아 보겠다
+GROUP BY day, time     -- 요일 시간대별로 GROUP BY 해서 보겠다
+HAVING COUNT(*) >= 5   -- GROUP BY 후 데이터가 5개 이상인 그룹의 데이터만 보겠다
+```
+
