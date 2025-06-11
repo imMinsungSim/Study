@@ -189,5 +189,4 @@ HAVING은 GROUP BY를 사용하여 연산한 결과에서 특정 조건을 만�
       HAVING COUNT(*) >= 5   -- GROUP BY 후 데이터가 5개 이상인 그룹의 데이터만 보겠다
       ```
 
-어
 
