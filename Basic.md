@@ -260,3 +260,23 @@ ex2) 식사 금액을 3단계로 나누어 데이터를 분류해 봅시다. 각
             ,COUNT(*) as cnts
       FROM tips 
       GROUP BY sales_category
+
+** IF() 함수 조건문 **
+
+- IF() 쿼리 예시
+SELECT *
+     , IF(size >= 5, '5인 이상', '5인 미만') AS size_category
+FROM tips
+
+ex1) tips 테이블에서 요일 컬럼을 기준으로 주말과 평일을 나누어 보는 쿼리를 작성해 봅시다 (IF() 함수로 풀어보기).
+
+      SELECT *
+           , IF(day IN('Sat', 'Sun'), '주말', '평일') as Weekend
+      from tips
+
+ex2) tips 테이블에서 요일 컬럼을 기준으로 주말과 평일을 나누어 보는 쿼리를 작성해 봅시다. 그리고 주말과 평일에 방문한 손님들의 수 합계를 계산해 봅시다 (IF() 함수로 풀어보기)
+
+      SELECT IF(day IN('Sat', 'Sun'), '주말', '평일') as Weekend
+            ,sum(size) as sum_size
+      from tips
+      GROUP BY Weekend
