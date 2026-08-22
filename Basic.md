@@ -261,7 +261,7 @@ ex2) 식사 금액을 3단계로 나누어 데이터를 분류해 봅시다. 각
       FROM tips 
       GROUP BY sales_category
 
-** IF() 함수 조건문 **
+**IF() 함수 조건문**
 
 - IF() 쿼리 예시
 SELECT *
