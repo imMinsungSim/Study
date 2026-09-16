@@ -1,1 +1,5 @@
 'SELECT', 'FROM', 'ORDER BY', 'LIMIT'
+
+      SELECT *
+      FROM station
+      WHERE address LIKE '%망원동%';
