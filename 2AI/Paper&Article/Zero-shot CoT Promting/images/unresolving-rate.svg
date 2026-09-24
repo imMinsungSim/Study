@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif">
+<rect width="760" height="380" fill="#ffffff"/>
+<text x="380.0" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#111">Zero-Shot-CoT가 틀린 128문제 중 예시를 붙여도 여전히 틀린 비율</text>
+<text x="380.0" y="46" text-anchor="middle" font-size="12" fill="#555">출처: Zhang et al. (2022) Figure 2 · 낮을수록 좋음 · 단위 %</text>
+<line x1="60" y1="288.0" x2="740" y2="288.0" stroke="#e5e7eb"/>
+<text x="52" y="292.0" text-anchor="end" font-size="11" fill="#666">0</text>
+<line x1="60" y1="246.0" x2="740" y2="246.0" stroke="#e5e7eb"/>
+<text x="52" y="250.0" text-anchor="end" font-size="11" fill="#666">12</text>
+<line x1="60" y1="204.0" x2="740" y2="204.0" stroke="#e5e7eb"/>
+<text x="52" y="208.0" text-anchor="end" font-size="11" fill="#666">24</text>
+<line x1="60" y1="162.0" x2="740" y2="162.0" stroke="#e5e7eb"/>
+<text x="52" y="166.0" text-anchor="end" font-size="11" fill="#666">36</text>
+<line x1="60" y1="120.0" x2="740" y2="120.0" stroke="#e5e7eb"/>
+<text x="52" y="124.0" text-anchor="end" font-size="11" fill="#666">48</text>
+<line x1="60" y1="78.0" x2="740" y2="78.0" stroke="#e5e7eb"/>
+<text x="52" y="82.0" text-anchor="end" font-size="11" fill="#666">60</text>
+<rect x="207.0" y="123.8" width="43.0" height="164.2" fill="#ef4444" rx="2"/>
+<text x="228.5" y="119.8" text-anchor="middle" font-size="11" fill="#111">46.9</text>
+<text x="230.0" y="306" text-anchor="middle" font-size="12" fill="#222">유사 예시 검색</text>
+<text x="230.0" y="320" text-anchor="middle" font-size="12" fill="#222">(Retrieval-Q-CoT)</text>
+<rect x="547.0" y="197.7" width="43.0" height="90.3" fill="#ef4444" rx="2"/>
+<text x="568.5" y="193.7" text-anchor="middle" font-size="11" fill="#111">25.8</text>
+<text x="570.0" y="306" text-anchor="middle" font-size="12" fill="#222">무작위 예시</text>
+<text x="570.0" y="320" text-anchor="middle" font-size="12" fill="#222">(Random-Q-CoT)</text>
+</svg>

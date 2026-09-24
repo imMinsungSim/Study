@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif">
+<rect width="760" height="400" fill="#ffffff"/>
+<text x="380.0" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#111">모델 크기별 GSM8K 정답률 (PaLM): 540B에서 격차가 폭발</text>
+<text x="380.0" y="46" text-anchor="middle" font-size="12" fill="#555">출처: Wei et al. (2022) Table 2 · 단위 %</text>
+<line x1="60" y1="308.0" x2="740" y2="308.0" stroke="#e5e7eb"/>
+<text x="52" y="312.0" text-anchor="end" font-size="11" fill="#666">0</text>
+<line x1="60" y1="262.0" x2="740" y2="262.0" stroke="#e5e7eb"/>
+<text x="52" y="266.0" text-anchor="end" font-size="11" fill="#666">12</text>
+<line x1="60" y1="216.0" x2="740" y2="216.0" stroke="#e5e7eb"/>
+<text x="52" y="220.0" text-anchor="end" font-size="11" fill="#666">24</text>
+<line x1="60" y1="170.0" x2="740" y2="170.0" stroke="#e5e7eb"/>
+<text x="52" y="174.0" text-anchor="end" font-size="11" fill="#666">36</text>
+<line x1="60" y1="124.0" x2="740" y2="124.0" stroke="#e5e7eb"/>
+<text x="52" y="128.0" text-anchor="end" font-size="11" fill="#666">48</text>
+<line x1="60" y1="78.0" x2="740" y2="78.0" stroke="#e5e7eb"/>
+<text x="52" y="82.0" text-anchor="end" font-size="11" fill="#666">60</text>
+<rect x="127.3" y="289.2" width="43.0" height="18.8" fill="#9aa5b1" rx="2"/>
+<text x="148.8" y="285.2" text-anchor="middle" font-size="11" fill="#111">4.9</text>
+<rect x="173.3" y="292.3" width="43.0" height="15.7" fill="#3b82f6" rx="2"/>
+<text x="194.8" y="288.3" text-anchor="middle" font-size="11" fill="#111">4.1</text>
+<text x="173.3" y="326" text-anchor="middle" font-size="12" fill="#222">8B</text>
+<rect x="354.0" y="271.2" width="43.0" height="36.8" fill="#9aa5b1" rx="2"/>
+<text x="375.5" y="267.2" text-anchor="middle" font-size="11" fill="#111">9.6</text>
+<rect x="400.0" y="193.4" width="43.0" height="114.6" fill="#3b82f6" rx="2"/>
+<text x="421.5" y="189.4" text-anchor="middle" font-size="11" fill="#111">29.9</text>
+<text x="400.0" y="326" text-anchor="middle" font-size="12" fill="#222">62B</text>
+<rect x="580.7" y="239.4" width="43.0" height="68.6" fill="#9aa5b1" rx="2"/>
+<text x="602.2" y="235.4" text-anchor="middle" font-size="11" fill="#111">17.9</text>
+<rect x="626.7" y="89.9" width="43.0" height="218.1" fill="#3b82f6" rx="2"/>
+<text x="648.2" y="85.9" text-anchor="middle" font-size="11" fill="#111">56.9</text>
+<text x="626.7" y="326" text-anchor="middle" font-size="12" fill="#222">540B</text>
+<rect x="60" y="372" width="12" height="12" fill="#9aa5b1" rx="2"/>
+<text x="77" y="382" font-size="12" fill="#222">일반 프롬프트</text>
+<rect x="140.4" y="372" width="12" height="12" fill="#3b82f6" rx="2"/>
+<text x="157.4" y="382" font-size="12" fill="#222">CoT 프롬프트</text>
+</svg>
