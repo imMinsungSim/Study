@@ -1,7 +1,1 @@
-'SELECT', 'FROM', 'ORDER BY', 'LIMIT'
-
-
-```python
-def hello_world():
-    print("Hello, World!")
-```
+``` slect * ```
