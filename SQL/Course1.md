@@ -1,6 +1,6 @@
-Review
+####Review
 
-SELECTM FROM, ORDER BY, LIMIT
+`SELECT`, `FROM`, `ORDER BY`, `LIMIT`
 
 ```
 SELECT name
@@ -12,6 +12,10 @@ LIMIT 5
 
 `DISTINCT`
 
+```
+SELECT DISTINCT name
+FROM station
+```
 
 
 
