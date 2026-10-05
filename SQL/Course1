@@ -1,4 +1,12 @@
-```
-select * 
+Review
 
-```
+SELECTM FROM, ORDER BY, LIMIT
+
+  SELECT name
+       , adderss
+  FROM station
+  ORDER BY updated_at DESC, station_id ASC
+  LIMIT 5
+
+
+`DISTINCT`
