@@ -43,3 +43,15 @@ HAVING sales >= 200
 ORDER BY sales DESC
 LIMIT 1
 ```
+
+`CASE`, `IF()`
+
+```
+SELECT CASE
+            WHEN total_bill >= 40 THEN '큰 금액'
+            WHEN total_bill >= 10 THEN '평균 금액'     -- 첫 번째 조건에서 걸러진 나머진 데이터
+            ELSE '적은 금액'
+          END AS sales_category
+          , IF(day IN('Sat', 'Sun'), '주말', '평일') AS weekend
+FROM tips
+```
