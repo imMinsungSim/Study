@@ -30,3 +30,16 @@ FROM tips
 SELECT SUM(total_bill) / COUNT(*)
 -> (16.99 + 10.34 + 21.01 + 23.68) / 6
 ```
+
+`GROUP BY` & `HAVING`
+
+```
+SELECT day          -- GROUP BY 기준이 되는 컬럼은 SELECT에도 반드시 적는다
+     , SUM(total_bill) AS sales
+FROM tips
+WHERE sex = 'Female'
+GROUP BY day
+HAVING sales >= 200
+ORDER BY sales DESC
+LIMIT 1
+```
