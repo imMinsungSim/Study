@@ -55,3 +55,20 @@ SELECT CASE
         , IF(day IN('Sat', 'Sun'), '주말', '평일') AS weekend
 FROM tips
 ```
+
+`조건문과 `GROUP BY` 함께 사용하기`
+
+```
+SELECT IF(day IN('Sat', 'Sun'), '주말', '평일') AS weekend
+     , SUM(size) AS sum_size
+FROM tips
+GROUP BY weekend
+```
+
+`함수`
+
+```
+-- 날짜 더하기, 빼기
+DATE_ADD()          -- 날짜 더하기
+DATE_SUB()          -- 날짜 빼기
+```
