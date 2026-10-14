@@ -13,6 +13,7 @@ SELECT CASE WHEN last_order_date >= '2020-12-01' THEN 'recent' ELSE 'past' END r
 FROM customer_stats
 GROUP BY recency, frequency, monetary
 ORDER BY recency DESC
+```
 
 `테이블 피봇`
 
