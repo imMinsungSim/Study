@@ -56,7 +56,7 @@ SELECT CASE
 FROM tips
 ```
 
-`조건문과 `GROUP BY` 함께 사용하기`
+`조건문과 GROUP BY 함께 사용하기`
 
 ```
 SELECT IF(day IN('Sat', 'Sun'), '주말', '평일') AS weekend
