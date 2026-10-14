@@ -21,6 +21,7 @@ SELECT region AS Region
      , COUNT(CASE WHEN category = 'Furniture' THEN order_id END) AS Furniture
 FROM records
 GROUP BY region
+```
 
 `UNION`, `UNION ALL`
 
