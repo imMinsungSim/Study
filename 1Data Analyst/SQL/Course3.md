@@ -34,6 +34,7 @@ UNION ALL
 
 SELECT *
 FROM customers_after_2021
+```
 
 `INNER JOIN`
 
@@ -42,4 +43,4 @@ SELECT *
 FROM orders AS o
      INNER JOIN customers AS c ON o.customer_id = c.customer_id
 WHERE c.country = 'France'
-
+```
