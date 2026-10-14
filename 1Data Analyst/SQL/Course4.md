@@ -28,7 +28,6 @@ ORDER BY e.employee_id
 - R(Revenue, 매출) : 매출을 만드는 단계
 - R(Feferral, 추천) : 다른 사용자에게 제품을 추천하는 단계
 
-<br>
 
 #### 매출에 영향을 주는 요소
 - 활성 사용자 수
